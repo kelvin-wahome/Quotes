@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 quote: string[];
 
-this.quote = ["whats the yams"]
+constructor(){
+  this.quote = ["whats the yams"];
+}
+
+
 }
