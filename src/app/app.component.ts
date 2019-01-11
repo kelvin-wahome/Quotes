@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-
+import {Quote} from './quote'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-quote: string[];
-
-constructor(){
-  this.quote = ["whats the yams"];
-}
+    quotes = [
+      new Quote(1, 'Let go and let God', 'J cole', 'Wahome')
+    ]
 
 
 }
