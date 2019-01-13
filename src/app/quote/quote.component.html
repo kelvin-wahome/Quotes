@@ -1,10 +1,15 @@
-<h1>Quotes</h1>
-<ol>
-  <div  *ngFor = 'let quote of quotes'>
-    <li>{{quote.name}}</li>
-    <app-quote-details [quote]='quote'></app-quote-details>
-
+<div class="container">
+  <div class="jumbotron">
+    <h1>Quotes</h1>
 
   </div>
 
-</ol>
+  <ol>
+    <div *ngFor='let quote of quotes'>
+      <li>{{quote.name}}</li>
+      <app-quote-details [quote]='quote'></app-quote-details>
+      
+    </div>
+
+  </ol>
+</div>

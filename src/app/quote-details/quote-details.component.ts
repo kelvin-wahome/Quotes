@@ -6,7 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-
+    goalDelete(complete:boolean){
+      this.isComplete.emit(complete);
+    }
   @Input() quote:Quote;
   constructor() { }
 
