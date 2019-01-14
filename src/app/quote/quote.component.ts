@@ -9,6 +9,17 @@ export class QuoteComponent implements OnInit {
     quotes = [
       new Quote(1, 'Let go and let God', 'J cole', 'Wahome')
     ]
+    deleteQuote(isComplete,index){
+        if (isComplete){
+            let toDelete = confirm (`Are you sure you want to delete $ {this.quotes[index].name}`)
+
+            if (toDelete){
+              this.quotes.splice(index,1)
+            }
+          }
+        }
+
+
     constructor(){}
     ngOninit(){
 
