@@ -1,15 +1,21 @@
 <div class="container">
   <div class="jumbotron">
     <h1>Quotes</h1>
-
   </div>
-
-  <ol>
-    <div *ngFor='let quote of quotes; let i = index'>
-      <li>{{quote.name}}</li>
-      <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+  <div id="form" class="container">
+    <div class="row">
+      <app-quote-form></app-quote-form>
 
     </div>
 
-  </ol>
-</div>
+    <ol>
+      <div *ngFor="let quote of quotes; let i = 'index'">
+        <li>{{quote.name}}</li>
+        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+
+
+      </div>
+
+
+    </ol>
+  </div>
