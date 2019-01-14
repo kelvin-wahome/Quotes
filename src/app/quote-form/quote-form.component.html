@@ -1,24 +1,22 @@
 <div class="container-fluid">
-    <div class="row">
-        <form #quoteForm='ngForm'>
-            <div class="form-group">
+  <div class="row">
+    <form #quoteForm='ngForm'>
+      <div class="form-group">
 
-                <label for="name">Quote</label>
-                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name">
+        <label for="name">Quote</label>
+        <textarea  required class = "form-control" id="name" [(ngModel)]="newGoal.name" name="name" rows="4" cols="20"></textarea>
+      </div>
+      <div class="form-group">
 
-            </div>
-            <div class="form-group">
+        <label for="description">By</label>
+        <input type="any" name="" value="" id="author">
+      </div>
+      <div class="form-group">
+        <label for="complete">Written By</label>
+        <input type='any' id="username" required>
 
-                <label for="description">By</label>
-                <textarea class="form-control" id="author" rows="4" required></textarea>
-
-            </div>
-            <div class="form-group">
-                <label for="complete">Written By</label>
-                <input type='any' id="username" required>
-
-            </div>
-            <button type="submit" class="btn btn-success btn-lg">Add Goal</button>
-        </form>
-    </div>
+      </div>
+      <button type="submit" class="btn btn-success btn-lg">Add Goal</button>
+    </form>
+  </div>
 </div>
