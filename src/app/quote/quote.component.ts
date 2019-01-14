@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
       new Quote(2, 'What goes around comes around', 'JID', 'Ann'),
       new Quote(3, 'You cant eat your cake and have it', 'Ghandi', 'Kelvin'),
     ]
-    
+
     deleteQuote(isComplete,index){
         if (isComplete){
             let toDelete = confirm (`Are you sure you want to delete $ {this.quotes[index].name}`)
@@ -20,6 +20,13 @@ export class QuoteComponent implements OnInit {
               this.quotes.splice(index,1)
             }
           }
+        }
+
+
+        addNewQuote(quote){
+          let quoteLength = this.quotes.length;
+          quote.id=quoteLength+1;
+          this.quotes.push(quote)
         }
         constructor(){}
         ngOnInit(){

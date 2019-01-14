@@ -4,7 +4,8 @@
   </div>
   <div id="form" class="container">
     <div class="row">
-      <app-quote-form></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote ($event)"></app-quote-form>
+
 
     </div>
 
