@@ -5,6 +5,8 @@ This website was created to allow users to write favorite quotes
 This is an online platform where users can view and add favorite quotes
 
 website url: https://kelvin-wahome.github.io/Quotes/
+#Technologies used
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
 #Setup/Installation Requirements
 As long as you have a compatible browser the document will work.
@@ -12,13 +14,12 @@ As long as you have a compatible browser the document will work.
 There are no known bugs but if any please contact the developer.
 
 #Behaviour Driven Development
-Behaviour	Specification
-1.A user can view other Quotes
-2.A user can add new quotes | quote is displayed  
-Technologies Used
-The main Technology used is TypeScript
-Atom was the source code editor of choice.
-Git and Github were used as my local and online repositories respectively.
+Action|  Input| Output
+1.User Input Your quote and details| Quote and details|-
+2.User clicks on Add button|--|A new Quote.
+3.User clicks on Details button| --| The quote details appear.
+4.User clicks on like/dislike buttons|---| shows how many likes and dislikes.
+5.User click on Delete button|---| Quote is Deleted.
 #Support and contact details
 Contact me through my email: wahomekelving@gmail.com
 Telephone: +254740773391
@@ -32,33 +33,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-# Quotes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
