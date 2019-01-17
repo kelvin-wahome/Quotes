@@ -12,6 +12,7 @@ export class QuoteComponent implements OnInit {
       new Quote(3, 'You cant eat your cake and have it', 'Ghandi', 'Kelvin'),
     ]
 
+      
     deleteQuote(isComplete,index){
         if (isComplete){
             let toDelete = confirm (`Are you sure you want to delete $ {this.quotes[index].name}`)

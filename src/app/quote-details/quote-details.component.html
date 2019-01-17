@@ -1,2 +1,4 @@
 <p>  ~{{quote.author}} writen by ~ {{quote.username}}</p>
-<button (click)= 'deleteQuote(true)'>Delete</button>
+<button class="btn btn-danger" (click)= 'deleteQuote(true)'>Delete</button>
+<button class="btn btn-success" (click)='upVote()'>Like {{uvote}}</button>
+<button class="btn btn-success" (click)='downVote()'>Dislike {{dvote}}</button>

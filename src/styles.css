@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 .body{
-  background-image:url('/assets/back.jpg');
+  background-color: #448D76;
   background-size: cover;
   height: 700px;
   margin-top: -30px;
@@ -16,7 +16,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color:   #1d1d2f;
-  color: #ffcc00 ;
+  color:#EF7939 ;
   border-radius: 20px;
   opacity: 0.8;
 
