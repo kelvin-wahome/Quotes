@@ -1,7 +1,7 @@
-#Website Name: Quotes
+# Website Name: Quotes
 This website was created to allow users to write favorite quotes
 
-#Description
+# Description
 This is an online platform where users can view and add favorite quotes
 
 website url: https://kelvin-wahome.github.io/Quotes/
