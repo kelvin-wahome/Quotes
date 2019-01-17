@@ -15,6 +15,10 @@ export class QuoteDetailsComponent implements OnInit {
   uvote: number=0;
   dvote: number= 0;
 
+  toogleDetails(index){
+    this.quotes[index].showDescription= !this.quotes[index].showDescription;
+  }
+
   upVote(){
     this.uvote+=1;
   }
