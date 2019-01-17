@@ -7,12 +7,12 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
     quotes = [
-      new Quote(1, 'Let go and let God', 'J cole', 'Wahome'),
-      new Quote(2, 'What goes around comes around', 'JID', 'Ann'),
-      new Quote(3, 'You cant eat your cake and have it', 'Ghandi', 'Kelvin'),
+      new Quote(1, 'Let go and let God', 'J cole', 'Wahome', new Date(2019,1,2)),
+      new Quote(2, 'What goes around comes around', 'JID', 'Ann', new Date(2019,1,2)),
+      new Quote(3, 'You cant eat your cake and have it', 'Ghandi', 'Kelvin', new Date(2019,1,2)),
     ]
 
-      
+
     deleteQuote(isComplete,index){
         if (isComplete){
             let toDelete = confirm (`Are you sure you want to delete $ {this.quotes[index].name}`)

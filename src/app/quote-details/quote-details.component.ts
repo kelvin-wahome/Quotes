@@ -1,5 +1,6 @@
 import { Component, OnInit, Input , Output, EventEmitter} from '@angular/core';
 import {Quote} from '../quote'
+import {TimeAgoPipe} from 'time-ago-pipe';
 @Component({
   selector: 'app-quote-details',
   templateUrl: './quote-details.component.html',
