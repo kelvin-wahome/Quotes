@@ -7,17 +7,15 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HighlightDirective } from './highlight.directive';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { DateCountPipe } from './date-count.pipe';
-
+import {TimeAgoPipe} from 'time-ago-pipe';
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    Timeagopipe, 
+    TimeAgoPipe,
     QuoteDetailsComponent,
     HighlightDirective,
     QuoteFormComponent,
-    DateCountPipe,
 
   ],
   imports: [

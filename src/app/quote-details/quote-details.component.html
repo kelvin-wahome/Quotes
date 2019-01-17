@@ -1,5 +1,5 @@
 <p>  ~{{quote.author}} writen by ~ {{quote.username}}</p><br>
-<p>This quote was created <span>{{date | timeAgo}}</span></p>
+<p>This quote was created <span>{{quote.date | timeAgo}}</span></p>
 <button class="btn btn-danger" (click)= 'deleteQuote(true)'>Delete</button>
 <button class="btn btn-success" (click)='upVote()'>Like {{uvote}}</button>
 <button class="btn btn-success" (click)='downVote()'>Dislike {{dvote}}</button>

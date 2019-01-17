@@ -10,11 +10,11 @@
         <div class="form-group">
 
           <label for="description">By</label>
-          <input type="any" name="author" [(ngModel)]="newQuote.author" id="author">
+          <input type="text" name="author" [(ngModel)]="newQuote.author" id="author">
         </div>
         <div class="form-group">
           <label for="complete">Written By</label>
-          <input type='any' id="username" [(ngModel)]="newQuote.username" required class="form-control">
+          <input type='text' id="username" name="complete" [(ngModel)]="newQuote.username" required class="form-control">
 
         </div>
         <button type="submit" class="btn btn-success btn-lg">Add Goal</button>
